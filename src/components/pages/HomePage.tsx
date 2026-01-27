@@ -71,7 +71,6 @@ export default function HomePage() {
               calc(1.5*var(--r)) 0/calc(3*var(--r)) calc(3*var(--r));
         }
       `}</style>
-
       {/* --- Hero Section: The Grand Reveal --- */}
       <section className="relative w-full min-h-[110vh] flex flex-col items-center pt-32 pb-20 px-6 overflow-hidden bg-gradient-to-b from-accent-mint/12 via-background to-accent-pink/8">
         {/* Background Elements */}
@@ -104,8 +103,8 @@ export default function HomePage() {
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading text-7xl md:text-8xl lg:text-9xl text-foreground leading-[0.9] tracking-tight"
             >
-              <span className="block text-primary/95">Small Joys,</span>
-              <span className="block italic font-light text-foreground">Big Happiness</span>
+              <span className="block text-accent-mint">Small Joys,</span>
+              <span className="block italic font-light text-accent-pink">Big Happiness</span>
             </motion.h1>
             
             {/* Decorative floating elements */}
@@ -122,7 +121,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="font-paragraph text-lg md:text-xl text-secondary max-w-2xl leading-relaxed"
+            className="text-lg md:text-xl text-secondary max-w-2xl leading-relaxed font-noticia-text"
           >
             Discover personalized gift hampers, cozy corners, and moments worth celebrating. 
             We believe life should feel lighter, prettier, and full of little joys.
@@ -134,20 +133,12 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-6 w-full justify-center"
           >
-            <Link 
-              to="/store"
-              className="group relative px-10 py-5 bg-foreground text-background rounded-full overflow-hidden transition-all hover:scale-105"
-            >
-              <span className="relative z-10 flex items-center gap-2 font-paragraph text-lg">
-                Start Shopping <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </Link>
+
             <Link 
               to="/about"
               className="group px-10 py-5 bg-white border border-secondary/20 text-foreground rounded-full hover:border-primary/50 transition-all hover:shadow-lg"
             >
-              <span className="font-paragraph text-lg">Our Story</span>
+              <span className="font-paragraph text-lg text-destructive">Our Story</span>
             </Link>
           </motion.div>
         </motion.div>
@@ -180,9 +171,7 @@ export default function HomePage() {
           </div>
         </motion.div>
       </section>
-
       <Marquee text="Personalized Gift Hampers • Handcrafted Joy • Spread Happiness" />
-
       {/* --- Hamper Showcase Section --- */}
       <section className="w-full py-32 px-6 bg-gradient-to-b from-accent-mint/8 to-accent-pink/8">
         <div className="max-w-[120rem] mx-auto">
@@ -284,7 +273,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* --- Values Section: Sticky Stack --- */}
       <section className="relative w-full max-w-[120rem] mx-auto px-4 py-32">
         <div className="text-center mb-24">
@@ -323,7 +311,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
       {/* --- The Collection: Mosaic Grid --- */}
       <section className="w-full bg-white py-32 px-6 rounded-t-[4rem] mt-12">
         <div className="max-w-[110rem] mx-auto">
@@ -387,7 +374,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- Split Story Section (Inspiration Image Homage) --- */}
       <section className="w-full min-h-screen flex flex-col lg:flex-row">
         {/* Left: Mint/Green equivalent (using Primary/Light) */}
@@ -441,7 +427,6 @@ export default function HomePage() {
            </div>
         </div>
       </section>
-
       {/* --- CTA Section --- */}
       <section className="w-full py-32 px-6 bg-foreground text-background overflow-hidden relative">
         <div className="absolute inset-0 opacity-10">

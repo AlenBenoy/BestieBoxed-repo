@@ -19,8 +19,9 @@ export default {
                 '9xl': ['8rem', { lineHeight: '1.0', letterSpacing: '0.01em', fontWeight: '700' }],
             },
             fontFamily: {
-                heading: "cormorantgaramond",
-                paragraph: "sora"
+                heading: ["cormorantgaramond"],
+                paragraph: ["sora"],
+                "noticia-text": ["noticia text", "serif"]
             },
             colors: {
                 'accent-gold': '#FFD700',

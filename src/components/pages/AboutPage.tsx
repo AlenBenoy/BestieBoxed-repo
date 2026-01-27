@@ -75,12 +75,12 @@ export default function AboutPage() {
             className="relative"
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent-gold/10">
-              <Image 
-                src="https://static.wixstatic.com/media/8ba94d_37a6d75134974755872d9a2940f6ccde~mv2.png?originWidth=576&originHeight=704"
-                alt="BestieBoxed aesthetic lifestyle"
+              <Image
+                src="https://static.wixstatic.com/media/8ba94d_367b29db6513496198bcc4a01a788626~mv2.jpeg"
                 className="w-full h-full object-cover"
                 width={600}
-              />
+                originWidth={1536}
+                originHeight={1024} />
             </div>
           </motion.div>
         </div>
