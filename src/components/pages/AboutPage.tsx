@@ -58,7 +58,7 @@ export default function AboutPage() {
               Where It All Began
             </h2>
             <div className="space-y-4 font-paragraph text-lg text-secondary leading-relaxed">
-              <p className="text-xl">We didn't start this brand with a big plan.We</p>
+              <p className="text-xl">We didn't start this brand with a big plan. We started it</p>
 
             </div>
           </motion.div>
