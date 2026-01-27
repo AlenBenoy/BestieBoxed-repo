@@ -58,7 +58,7 @@ export default function AboutPage() {
               Where It All Began
             </h2>
             <div className="space-y-4 font-paragraph text-lg text-secondary leading-relaxed">
-              <p className="text-sm">We didn't start this brand with a big plan. We started it because we were tired. Tired of the corporate rush, endless deadlines and days that looked successful on paper but felt empty in real life. Somewhere between meetings, we realized we wanted something different, a life that felt lighter, softer, and more beautiful.We have</p>
+              <p className="text-sm">We didn't start this brand with a big plan. We started it because we were tired. Tired of the corporate rush, endless deadlines and days that looked successful on paper but felt empty in real life. Somewhere between meetings, we realized we wanted something different, a life that felt lighter, softer, and more beautiful.We have always loved the little things. A cozy corner at home, a thoughtfully chosen gift, an outfit that makes an ordinary day feel special. We didn't want perfection. We just wanted </p>
 
             </div>
           </motion.div>
