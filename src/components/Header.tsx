@@ -1,18 +1,24 @@
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 import { MiniCart } from '@/wix-verticals/react-pages/react-router/routes/root';
+import { Image } from '@/components/ui/image';
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-background/95 backdrop-blur-sm border-b border-secondary/10">
-      <div className="max-w-[100rem] mx-auto px-8 py-6">
+      <div className="max-w-[100rem] mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-              <Heart className="w-5 h-5 text-primary" fill="currentColor" />
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white group-hover:shadow-md transition-shadow">
+              <Image 
+                src="https://static.wixstatic.com/media/8ba94d_2985cc0efe1040d39b17a440f957c618~mv2.jpeg"
+                alt="BestieBoxed Logo"
+                className="w-10 h-10 object-contain"
+                width={40}
+              />
             </div>
-            <span className="font-heading text-3xl text-foreground">BestieBoxed</span>
+            <span className="font-heading text-2xl text-foreground">BestieBoxed</span>
           </Link>
 
           {/* Navigation */}

@@ -17,7 +17,7 @@ const SectionDivider = () => (
 
 const Marquee = ({ text, repeat = 4 }: { text: string; repeat?: number }) => {
   return (
-    <div className="relative flex overflow-hidden bg-primary/5 py-6 border-y border-primary/10">
+    <div className="relative flex overflow-hidden bg-gradient-to-r from-accent-mint/10 via-primary/10 to-accent-pink/10 py-6 border-y border-primary/20">
       <motion.div
         className="flex whitespace-nowrap"
         animate={{ x: [0, -1000] }}
@@ -25,8 +25,8 @@ const Marquee = ({ text, repeat = 4 }: { text: string; repeat?: number }) => {
       >
         {Array.from({ length: repeat }).map((_, i) => (
           <div key={i} className="flex items-center mx-8">
-            <span className="font-heading text-4xl text-primary/40 italic px-4">{text}</span>
-            <Star className="w-6 h-6 text-accent-gold/40" />
+            <span className="font-heading text-4xl text-primary/50 italic px-4">{text}</span>
+            <Star className="w-6 h-6 text-accent-gold/60" />
           </div>
         ))}
       </motion.div>
@@ -73,12 +73,12 @@ export default function HomePage() {
       `}</style>
 
       {/* --- Hero Section: The Grand Reveal --- */}
-      <section className="relative w-full min-h-[110vh] flex flex-col items-center pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative w-full min-h-[110vh] flex flex-col items-center pt-32 pb-20 px-6 overflow-hidden bg-gradient-to-b from-accent-mint/12 via-background to-accent-pink/8">
         {/* Background Elements */}
         <div className="absolute inset-0 w-full h-full pointer-events-none">
-          <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-b from-primary/5 to-transparent" />
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-accent-gold/5 to-transparent" />
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] bg-white rounded-full blur-3xl opacity-60 mix-blend-overlay" />
+          <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-b from-accent-mint/10 to-transparent" />
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-accent-pink/10 to-transparent" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] bg-white rounded-full blur-3xl opacity-40 mix-blend-overlay" />
         </div>
 
         <motion.div 
@@ -104,7 +104,7 @@ export default function HomePage() {
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading text-7xl md:text-8xl lg:text-9xl text-foreground leading-[0.9] tracking-tight"
             >
-              <span className="block text-primary/90">Small Joys,</span>
+              <span className="block text-primary/95">Small Joys,</span>
               <span className="block italic font-light text-foreground">Big Happiness</span>
             </motion.h1>
             
@@ -112,7 +112,7 @@ export default function HomePage() {
             <motion.div 
               animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-12 -right-12 lg:-right-24 text-accent-gold opacity-60"
+              className="absolute -top-12 -right-12 lg:-right-24 text-accent-gold opacity-70"
             >
               <Sparkles className="w-16 h-16" />
             </motion.div>
@@ -124,8 +124,8 @@ export default function HomePage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-paragraph text-lg md:text-xl text-secondary max-w-2xl leading-relaxed"
           >
-            Discover cozy corners, cute gifts, and outfits that spark joy. 
-            We believe life should feel lighter, prettier, and full of little moments worth celebrating.
+            Discover personalized gift hampers, cozy corners, and moments worth celebrating. 
+            We believe life should feel lighter, prettier, and full of little joys.
           </motion.p>
 
           <motion.div 
@@ -181,7 +181,109 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <Marquee text="Romanticize Your Life" />
+      <Marquee text="Personalized Gift Hampers • Handcrafted Joy • Spread Happiness" />
+
+      {/* --- Hamper Showcase Section --- */}
+      <section className="w-full py-32 px-6 bg-gradient-to-b from-accent-mint/8 to-accent-pink/8">
+        <div className="max-w-[120rem] mx-auto">
+          <div className="text-center mb-20">
+            <span className="font-paragraph text-sm text-primary tracking-widest uppercase mb-4 block">Our Specialty</span>
+            <h2 className="font-heading text-5xl md:text-6xl text-foreground mb-6">Personalized Gift Hampers</h2>
+            <p className="font-paragraph text-lg text-secondary max-w-2xl mx-auto">
+              Every hamper is thoughtfully curated and can be personalized to match your loved one's unique style and preferences.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_2e35e176f5c8440ab4fcd55b85919046~mv2.jpeg',
+                title: 'Luxury Birthday Hamper',
+                description: 'Premium curated gifts with personalized touches for unforgettable celebrations',
+                color: 'from-accent-pink/25 to-accent-gold/15'
+              },
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_2941cf6fcd5e437d979250065627bea1~mv2.jpeg',
+                title: 'Elegant Gift Box',
+                description: 'Sophisticated packaging with customizable contents for any occasion',
+                color: 'from-accent-mint/25 to-primary/15'
+              },
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_a4a5d3192b314f69b6aeb73f5945bd7d~mv2.jpeg',
+                title: 'Minimalist Aesthetic',
+                description: 'Clean, modern designs perfect for the contemporary gift-giver',
+                color: 'from-primary/25 to-accent-mint/15'
+              },
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_a0010831c9fd4221b2eeff1617441aa9~mv2.jpeg',
+                title: 'Romantic Collection',
+                description: 'Soft, romantic hampers with premium flowers and luxury items',
+                color: 'from-accent-pink/25 to-primary/15'
+              },
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_4d9d3e930406499c971ac04c3dffc4aa~mv2.jpeg',
+                title: 'Celebration Deluxe',
+                description: 'Bold, vibrant hampers for those who love to make a statement',
+                color: 'from-accent-gold/25 to-accent-pink/15'
+              },
+              {
+                image: 'https://static.wixstatic.com/media/8ba94d_1519a36b976541249386deb202774e09~mv2.jpeg',
+                title: 'Personalized Luxury',
+                description: 'Fully customizable hampers tailored to your exact specifications',
+                color: 'from-primary/25 to-accent-gold/15'
+              }
+            ].map((hamper, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className={`group relative rounded-3xl overflow-hidden bg-gradient-to-br ${hamper.color} backdrop-blur-sm border border-white/50 hover:border-primary/50 transition-all duration-300 hover:shadow-xl`}
+              >
+                <div className="aspect-[3/4] overflow-hidden relative">
+                  <Image
+                    src={hamper.image}
+                    alt={hamper.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    width={400}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="p-6 space-y-3">
+                  <h3 className="font-heading text-2xl text-foreground">{hamper.title}</h3>
+                  <p className="font-paragraph text-sm text-secondary leading-relaxed">{hamper.description}</p>
+                  <motion.div
+                    whileHover={{ x: 4 }}
+                    className="inline-flex items-center gap-2 text-primary font-paragraph text-sm font-medium pt-2"
+                  >
+                    Customize Now <ArrowRight className="w-4 h-4" />
+                  </motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="mt-16 text-center"
+          >
+            <p className="font-paragraph text-lg text-secondary mb-6">
+              ✨ Ready-to-give hampers launching soon! Pre-order now to be among the first to receive them.
+            </p>
+            <Link
+              to="/store"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-primary to-accent-pink text-white rounded-full font-paragraph font-medium hover:shadow-lg transition-all hover:scale-105"
+            >
+              <Gift className="w-5 h-5" />
+              Explore All Hampers
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
       {/* --- Values Section: Sticky Stack --- */}
       <section className="relative w-full max-w-[120rem] mx-auto px-4 py-32">
@@ -291,7 +393,7 @@ export default function HomePage() {
         {/* Left: Mint/Green equivalent (using Primary/Light) */}
         <div className="w-full lg:w-1/2 bg-[#F0FDF4] flex items-center justify-center p-12 lg:p-24 relative overflow-hidden">
            <div className="absolute top-0 left-0 w-full h-full opacity-30" 
-                style={{ backgroundImage: 'radial-gradient(#C8A2C8 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
+                style={{ backgroundImage: 'radial-gradient(#D4A5D4 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
            
            <div className="relative z-10 max-w-xl space-y-8">
              <div className="inline-block p-3 bg-white rounded-2xl shadow-sm rotate-3">
@@ -344,7 +446,7 @@ export default function HomePage() {
       <section className="w-full py-32 px-6 bg-foreground text-background overflow-hidden relative">
         <div className="absolute inset-0 opacity-10">
            <div className="absolute top-0 left-0 w-full h-full" 
-                style={{ backgroundImage: 'linear-gradient(45deg, #C8A2C8 25%, transparent 25%, transparent 75%, #C8A2C8 75%, #C8A2C8), linear-gradient(45deg, #C8A2C8 25%, transparent 25%, transparent 75%, #C8A2C8 75%, #C8A2C8)', backgroundSize: '60px 60px', backgroundPosition: '0 0, 30px 30px' }}></div>
+                style={{ backgroundImage: 'linear-gradient(45deg, #D4A5D4 25%, transparent 25%, transparent 75%, #D4A5D4 75%, #D4A5D4), linear-gradient(45deg, #D4A5D4 25%, transparent 25%, transparent 75%, #D4A5D4 75%, #D4A5D4)', backgroundSize: '60px 60px', backgroundPosition: '0 0, 30px 30px' }}></div>
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-10">

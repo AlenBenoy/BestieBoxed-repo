@@ -24,14 +24,16 @@ export default {
             },
             colors: {
                 'accent-gold': '#D4AF37',
+                'accent-mint': '#A8D8D8',
+                'accent-pink': '#F5B6D4',
                 destructive: '#E57373',
                 'destructive-foreground': '#FFFFFF',
-                background: '#F8F8F8',
-                secondary: '#A9A9A9',
-                foreground: '#333333',
+                background: '#FAFBF9',
+                secondary: '#8B9B8B',
+                foreground: '#2D3D2D',
                 'secondary-foreground': '#FFFFFF',
                 'primary-foreground': '#FFFFFF',
-                primary: '#C8A2C8'
+                primary: '#D4A5D4'
             },
         },
     },
