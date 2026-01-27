@@ -93,7 +93,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-3 px-6 py-2 bg-white/80 backdrop-blur-sm border border-primary/20 rounded-full shadow-sm"
           >
             <Heart className="w-4 h-4 text-primary fill-primary" />
-            <span className="font-paragraph text-sm tracking-widest uppercase text-foreground/80">Est. 2024 • Curated with Love</span>
+            <span className="font-paragraph text-sm tracking-widest uppercase text-foreground/80">Est. 2026 • Curated with Love</span>
           </motion.div>
 
           {/* Main Title - Arched Effect Simulation via Layout */}

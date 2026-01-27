@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white group-hover:shadow-md transition-shadow">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-accent-mint to-accent-pink group-hover:shadow-lg transition-shadow">
               <Image 
                 src="https://static.wixstatic.com/media/8ba94d_2985cc0efe1040d39b17a440f957c618~mv2.jpeg"
                 alt="BestieBoxed Logo"
