@@ -11,7 +11,6 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background">
-
       {/* Hero Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 py-24">
         <motion.div
@@ -45,7 +44,6 @@ export default function AboutPage() {
           </motion.p>
         </motion.div>
       </section>
-
       {/* Story Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -59,21 +57,9 @@ export default function AboutPage() {
             <h2 className="font-heading text-5xl text-foreground">
               Where It All Began
             </h2>
-            <div className="space-y-4 font-paragraph text-base text-secondary leading-relaxed">
-              <p>
-                We started with a vision to create a space where people could find items that make 
-                their daily lives feel softer, prettier, and more intentional. A place where every 
-                product tells a story of comfort, beauty, and thoughtfulness.
-              </p>
-              <p>
-                Our founder believed that romanticizing life isn't about perfection—it's about 
-                finding joy in the little things. A cozy blanket, a thoughtful gift, an outfit 
-                that makes you feel like yourself. These are the moments we celebrate.
-              </p>
-              <p>
-                Today, BestieBoxed is more than a store. It's a community of people who believe 
-                in soft living, aesthetic joy, and the power of small, beautiful moments.
-              </p>
+            <div className="space-y-4 font-paragraph text-lg text-secondary leading-relaxed">
+              <p className="text-xl">We didn't start this brand with a big plan.We</p>
+
             </div>
           </motion.div>
 
@@ -95,7 +81,6 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-
       {/* Values Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 py-24">
         <motion.div
@@ -150,7 +135,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-
       {/* Mission Section */}
       <section className="w-full max-w-[100rem] mx-auto px-8 py-24">
         <motion.div
