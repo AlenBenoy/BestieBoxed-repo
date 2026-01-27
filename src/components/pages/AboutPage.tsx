@@ -58,7 +58,11 @@ export default function AboutPage() {
               Where It All Began
             </h2>
             <div className="space-y-4 font-paragraph text-lg text-secondary leading-relaxed">
-              <p className="text-sm">We didn't start this brand with a big plan. We started it because we were tired. Tired of the corporate rush, endless deadlines and days that looked successful on paper but felt empty in real life. Somewhere between meetings, we realized we wanted something different, a life that felt lighter, softer, and more beautiful.We have always loved the little things. A cozy corner at home, a thoughtfully chosen gift, an outfit that makes an ordinary day feel special. We didn't want perfection. We just wanted </p>
+              <p className="text-sm">We didn't start this brand with a big plan. We started it because we were tired. Tired of the corporate rush, endless deadlines and days that looked successful on paper but felt empty in real life. Somewhere between meetings, we realized we wanted something different, a life that felt lighter, softer, and more beautiful.We have always loved the little things. A cozy corner at home, a thoughtfully chosen gift, an outfit that makes an ordinary day feel special. We didn't want perfection. We just wanted to make everyday life feel a little more aesthetic. </p>
+              <p className="text-sm">So, it began by changing our own routines, styling our spaces, curating things we genuinely loved, slowing down when we could and finding joy in simple details. And soon, a thought kept coming back to us "What if we shared this?" </p>
+              <p className="text-sm">What if we created a space for people who also wanted to romanticize life a little? People who believe that joy can exist in small moments, that comfort matters and that beauty doesn't have to be complicated. </p>
+              <p className="text-sm">That's how this brand was born. It's not about trends or pressure, it's about choosing things that make you feel good. </p>
+              <p className="text-sm">We are not here to tell you how to live, we are here to figure it out alongside you. </p> 
 
             </div>
           </motion.div>
