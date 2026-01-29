@@ -178,13 +178,7 @@ export default function ContactPage() {
                   contact: 'droptobestieboxed@gmail.com',
                   link: 'mailto:droptobestieboxed@gmail.com'
                 },
-                {
-                  icon: MessageCircle,
-                  title: 'Live Chat',
-                  description: 'Available Mon-Fri, 9am-5pm EST',
-                  contact: 'Start a conversation',
-                  link: '#'
-                }
+                
               ].map((method, index) => (
                 <div
                   key={index}
