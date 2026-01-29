@@ -35,18 +35,6 @@ export default function Footer() {
               >
                 Gifts
               </Link>
-              <Link 
-                to="/store" 
-                className="font-paragraph text-sm text-background/70 hover:text-primary transition-colors"
-              >
-                Cozy Essentials
-              </Link>
-              <Link 
-                to="/store" 
-                className="font-paragraph text-sm text-background/70 hover:text-primary transition-colors"
-              >
-                Outfits
-              </Link>
             </nav>
           </div>
 
