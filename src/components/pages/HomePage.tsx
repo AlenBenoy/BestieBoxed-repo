@@ -134,6 +134,13 @@ export default function HomePage() {
             className="flex flex-col sm:flex-row gap-6 w-full justify-center"
           >
 
+            <a 
+              href="#hampers"
+              className="group px-10 py-5 bg-primary text-white rounded-full hover:bg-primary/90 transition-all hover:shadow-lg"
+            >
+              <span className="font-paragraph text-lg font-medium">Shop Now</span>
+            </a>
+
             <Link 
               to="/about"
               className="group px-10 py-5 bg-white border border-secondary/20 text-foreground rounded-full hover:border-primary/50 transition-all hover:shadow-lg"
@@ -173,7 +180,7 @@ export default function HomePage() {
       </section>
       <Marquee text="Personalized Gift Hampers • Handcrafted Joy • Spread Happiness" />
       {/* --- Hamper Showcase Section --- */}
-      <section className="w-full py-32 px-6 bg-gradient-to-b from-accent-mint/8 to-accent-pink/8">
+      <section id="hampers" className="w-full py-32 px-6 bg-gradient-to-b from-accent-mint/8 to-accent-pink/8">
         <div className="max-w-[120rem] mx-auto">
           <div className="text-center mb-20">
             <span className="font-paragraph text-sm text-primary tracking-widest uppercase mb-4 block">Our Specialty</span>
