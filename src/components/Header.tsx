@@ -29,12 +29,12 @@ export default function Header() {
             >
               Home
             </Link>
-            <Link 
+            <a 
               href="https://www.instagram.com/bestie_boxed?igsh=MWdxMDlwcTJ0eDlmNg==" 
               className="font-paragraph text-base text-foreground hover:text-primary transition-colors"
             >
               Shop
-            </Link>
+            </a>
             <Link 
               to="/about" 
               className="font-paragraph text-base text-foreground hover:text-primary transition-colors"
