@@ -351,7 +351,7 @@ export default function HomePage() {
             whileTap={{ scale: 0.95 }}
           >
             <a 
-              href="#hampers"
+              href="https://www.instagram.com/bestie_boxed?igsh=MWdxMDlwcTJ0eDlmNg=="
               className="inline-flex items-center gap-4 px-12 py-6 bg-white text-foreground rounded-full font-paragraph text-xl font-medium hover:bg-primary hover:text-white transition-colors shadow-2xl shadow-white/10"
             >
               <ShoppingBag className="w-6 h-6" />
