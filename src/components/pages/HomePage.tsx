@@ -102,8 +102,8 @@ export default function HomePage() {
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading text-7xl md:text-8xl lg:text-9xl text-foreground leading-[0.9] tracking-tight"
             >
-              <span className="block text-accent-mint">Small Joys,</span>
-              <span className="block italic font-light text-accent-pink">Big Happiness</span>
+              <span className="block text-[#2cb5afff]">Small Joys,</span>
+              <span className="block italic font-light text-[#e825acff]">Big Happiness</span>
             </motion.h1>
             
             {/* Decorative floating elements */}
