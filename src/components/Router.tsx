@@ -5,10 +5,6 @@ import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
 
 // Import Wix Services Provider and routes
 import { rootRouteLoader, WixServicesProvider } from '@/wix-verticals/react-pages/react-router/routes/root';
-import { ProductDetailsRoute, productRouteLoader } from '@/wix-verticals/react-pages/react-router/routes/product-details';
-import { StoreCollectionRoute, storeCollectionRouteLoader } from '@/wix-verticals/react-pages/react-router/routes/store-collection';
-import { defaultStoreCollectionRouteRedirectLoader } from '@/wix-verticals/react-pages/react-router/routes/store-redirect';
-import { Cart } from '@/wix-verticals/react-pages/react-router/routes/cart';
 
 // Import pages
 import HomePage from '@/components/pages/HomePage';
@@ -86,57 +82,6 @@ const router = createBrowserRouter([
           {
             path: "terms",
             element: <TermsPage />,
-          },
-          {
-            path: "cart",
-            element: (
-              <div className="w-full max-w-[100rem] mx-auto px-8 py-16">
-                <h1 className="font-heading text-5xl text-foreground mb-8">Your Cart</h1>
-                <Cart />
-              </div>
-            ),
-          },
-          {
-            path: "store",
-            element: (
-              <div className="w-full max-w-[100rem] mx-auto px-8 py-16">
-                <h1 className="font-heading text-5xl text-foreground mb-8">Shop All Products</h1>
-                <StoreCollectionRoute productPageRoute="/products" />
-              </div>
-            ),
-            loader: defaultStoreCollectionRouteRedirectLoader,
-          },
-          {
-            path: "store/:categorySlug",
-            element: (
-              <div className="w-full max-w-[100rem] mx-auto px-8 py-16">
-                <StoreCollectionRoute productPageRoute="/products" />
-              </div>
-            ),
-            loader: storeCollectionRouteLoader,
-            routeMetadata: {
-              appDefId: "1380b703-ce81-ff05-f115-39571d94dfcd",
-              pageIdentifier: "wix.stores.sub_pages.category",
-              identifiers: {
-                categorySlug: "STORES.CATEGORY.SLUG"
-              }
-            }
-          },
-          {
-            path: "products/:slug",
-            element: (
-              <div className="w-full max-w-[100rem] mx-auto px-8 py-16">
-                <ProductDetailsRoute />
-              </div>
-            ),
-            loader: productRouteLoader,
-            routeMetadata: {
-              appDefId: "1380b703-ce81-ff05-f115-39571d94dfcd",
-              pageIdentifier: "wix.stores.sub_pages.product",
-              identifiers: {
-                slug: "STORES.PRODUCT.SLUG"
-              }
-            },
           },
         ],
       },

@@ -270,13 +270,6 @@ export default function HomePage() {
             <p className="font-paragraph text-lg text-secondary mb-6">
               ✨ Ready-to-give hampers launching soon! Pre-order now to be among the first to receive them.
             </p>
-            <Link
-              to="/store"
-              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-primary to-accent-pink text-white rounded-full font-paragraph font-medium hover:shadow-lg transition-all hover:scale-105"
-            >
-              <Gift className="w-5 h-5" />
-              Explore All Hampers
-            </Link>
           </motion.div>
         </div>
       </section>
@@ -399,13 +392,13 @@ export default function HomePage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link 
-              to="/store"
+            <a 
+              href="#hampers"
               className="inline-flex items-center gap-4 px-12 py-6 bg-white text-foreground rounded-full font-paragraph text-xl font-medium hover:bg-primary hover:text-white transition-colors shadow-2xl shadow-white/10"
             >
               <ShoppingBag className="w-6 h-6" />
               Shop The Collection
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
