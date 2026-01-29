@@ -346,7 +346,7 @@ export default function HomePage() {
              {/* Decorative "Box" Elements */}
              <div className="absolute inset-0 bg-white rounded-t-full rounded-b-[3rem] shadow-2xl transform -rotate-2 z-10 overflow-hidden border-8 border-white">
                 <Image 
-                  src="https://static.wixstatic.com/media/8ba94d_90acd90458be48518cb9bfb66fc6e498~mv2.png?originWidth=768&originHeight=960"
+                  src="https://static.wixstatic.com/media/8ba94d_41d128a66f4448dea2c2a3466977f050~mv2.jpeg"
                   alt="Founders"
                   className="w-full h-full object-cover"
                 />
