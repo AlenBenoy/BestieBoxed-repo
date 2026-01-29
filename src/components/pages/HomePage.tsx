@@ -311,69 +311,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      {/* --- The Collection: Mosaic Grid --- */}
-      <section className="w-full bg-white py-32 px-6 rounded-t-[4rem] mt-12">
-        <div className="max-w-[110rem] mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 px-4">
-            <div>
-              <span className="font-paragraph text-sm text-primary tracking-widest uppercase mb-2 block">The Shop</span>
-              <h2 className="font-heading text-5xl md:text-6xl text-foreground">Curated Favorites</h2>
-            </div>
-            <Link to="/store" className="hidden md:flex items-center gap-2 text-lg font-paragraph border-b border-foreground pb-1 hover:text-primary hover:border-primary transition-colors">
-              View All Products <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[80vh]">
-            {/* Large Feature Item */}
-            <div className="md:col-span-6 lg:col-span-5 relative group overflow-hidden rounded-3xl h-[50vh] md:h-full bg-secondary/5">
-              <Image 
-                src="https://static.wixstatic.com/media/8ba94d_349d1ea911374cab9e7a4578cb4e2559~mv2.png?originWidth=896&originHeight=576"
-                alt="Featured Collection"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur px-6 py-4 rounded-2xl">
-                <p className="font-heading text-2xl">The Cozy Set</p>
-                <p className="font-paragraph text-sm text-secondary">Limited Edition</p>
-              </div>
-            </div>
-
-            {/* Right Side Grid */}
-            <div className="md:col-span-6 lg:col-span-7 grid grid-cols-2 gap-6 h-full">
-              <div className="col-span-2 h-[30vh] md:h-auto relative group overflow-hidden rounded-3xl bg-secondary/5">
-                 <Image 
-                  src="https://static.wixstatic.com/media/8ba94d_fef7757446e54503b2eaa1d6cba1f959~mv2.png?originWidth=896&originHeight=576"
-                  alt="New Arrivals"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute top-6 right-6 bg-accent-gold text-white px-4 py-1 rounded-full text-sm font-paragraph">New</div>
-              </div>
-              <div className="h-[30vh] md:h-auto relative group overflow-hidden rounded-3xl bg-secondary/5">
-                 <Image 
-                  src="https://static.wixstatic.com/media/8ba94d_dd3c45440dfb4e72bc7e3a2cbcaacb62~mv2.png?originWidth=896&originHeight=576"
-                  alt="Accessories"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="h-[30vh] md:h-auto relative group overflow-hidden rounded-3xl bg-primary/10 flex items-center justify-center text-center p-6 cursor-pointer hover:bg-primary/20 transition-colors">
-                <Link to="/store" className="space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm">
-                    <ArrowRight className="w-6 h-6 text-primary" />
-                  </div>
-                  <p className="font-heading text-2xl text-primary">Explore All<br/>Categories</p>
-                </Link>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-8 md:hidden flex justify-center">
-             <Link to="/store" className="flex items-center gap-2 text-lg font-paragraph border-b border-foreground pb-1">
-              View All Products <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
       {/* --- Split Story Section (Inspiration Image Homage) --- */}
       <section className="w-full min-h-screen flex flex-col lg:flex-row">
         {/* Left: Mint/Green equivalent (using Primary/Light) */}
