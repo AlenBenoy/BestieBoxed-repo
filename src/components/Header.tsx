@@ -30,7 +30,7 @@ export default function Header() {
               Home
             </Link>
             <Link 
-              to="#hampers" 
+              href="https://www.instagram.com/bestie_boxed?igsh=MWdxMDlwcTJ0eDlmNg==" 
               className="font-paragraph text-base text-foreground hover:text-primary transition-colors"
             >
               Shop

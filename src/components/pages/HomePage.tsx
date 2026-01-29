@@ -133,13 +133,6 @@ export default function HomePage() {
             className="flex flex-col sm:flex-row gap-6 w-full justify-center"
           >
 
-            <a 
-              href="#hampers"
-              className="group px-10 py-5 bg-primary text-white rounded-full hover:bg-primary/90 transition-all hover:shadow-lg"
-            >
-              <span className="font-paragraph text-lg font-medium">Shop Now</span>
-            </a>
-
             <Link 
               to="/about"
               className="group px-10 py-5 bg-white border border-secondary/20 text-foreground rounded-full hover:border-primary/50 transition-all hover:shadow-lg"
@@ -222,12 +215,7 @@ export default function HomePage() {
                 <div className="p-6 space-y-3">
                   <h3 className="font-heading text-2xl text-foreground">{hamper.title}</h3>
                   <p className="font-paragraph text-sm text-secondary leading-relaxed">{hamper.description}</p>
-                  <motion.div
-                    whileHover={{ x: 4 }}
-                    className="inline-flex items-center gap-2 text-primary font-paragraph text-sm font-medium pt-2"
-                  >
-                    Customize Now <ArrowRight className="w-4 h-4" />
-                  </motion.div>
+
                 </div>
               </motion.div>
             ))}
@@ -240,9 +228,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-16 text-center"
           >
-            <p className="font-paragraph text-lg text-secondary mb-6">
-              ✨ Ready-to-give hampers launching soon! Pre-order now to be among the first to receive them.
-            </p>
+            <p className="font-paragraph text-lg text-secondary mb-6">✨ Ready-to-give hampers launching soon!</p>
           </motion.div>
         </div>
       </section>
