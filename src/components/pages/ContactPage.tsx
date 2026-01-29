@@ -175,8 +175,8 @@ export default function ContactPage() {
                   icon: Mail,
                   title: 'Email Us',
                   description: 'Drop us a line anytime',
-                  contact: 'hello@bestieboxed.com',
-                  link: 'mailto:hello@bestieboxed.com'
+                  contact: 'droptobestieboxed@gmail.com',
+                  link: 'mailto:droptobestieboxed@gmail.com'
                 },
                 {
                   icon: MessageCircle,

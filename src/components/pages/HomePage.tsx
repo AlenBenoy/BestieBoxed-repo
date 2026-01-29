@@ -79,7 +79,6 @@ export default function HomePage() {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-b from-accent-pink/10 to-transparent" />
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] bg-white rounded-full blur-3xl opacity-40 mix-blend-overlay" />
         </div>
-
         <motion.div 
           style={{ y: yHero, opacity: opacityHero }}
           className="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-12"
@@ -149,34 +148,8 @@ export default function HomePage() {
             </Link>
           </motion.div>
         </motion.div>
-
         {/* Hero Image - The "Box" Metaphor */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.9, y: 100 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="relative w-full max-w-[90rem] mt-20 aspect-[16/9] md:aspect-[21/9] rounded-[3rem] overflow-hidden shadow-2xl"
-        >
-          <div className="absolute inset-0 bg-foreground/5 z-10 mix-blend-multiply pointer-events-none" />
-          <Image 
-            src="https://static.wixstatic.com/media/8ba94d_7cbb17887bc548b89f60da9d0a447f60~mv2.png?originWidth=1600&originHeight=896"
-            alt="A curated collection of aesthetic items"
-            className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[2s]"
-            width={1600}
-          />
-          {/* Overlay Text */}
-          <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 bg-gradient-to-t from-black/40 to-transparent z-20 flex justify-between items-end">
-            <div className="text-white">
-              <p className="font-heading text-3xl md:text-4xl italic">The Seasonal Edit</p>
-              <p className="font-paragraph text-sm opacity-90 mt-2">Curated for the romantic soul</p>
-            </div>
-            <div className="hidden md:block">
-              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-                <ArrowRight className="w-6 h-6 text-white -rotate-45" />
-              </div>
-            </div>
-          </div>
-        </motion.div>
+
       </section>
       <Marquee text="Personalized Gift Hampers • Handcrafted Joy • Spread Happiness" />
       {/* --- Hamper Showcase Section --- */}
@@ -311,7 +284,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
       {/* --- Split Story Section (Inspiration Image Homage) --- */}
       <section className="w-full min-h-screen flex flex-col lg:flex-row">
         {/* Left: Mint/Green equivalent (using Primary/Light) */}
